@@ -65,8 +65,8 @@ table {
     --light-gray: #EAEAEA;
     --white: #FFFFFF;
     --black: #000000;
-    --heading-font: Molle, sans-serif;
-    --fonts: Montserrat, sans-serif;
+    --heading-font: "Molle", sans-serif;
+    --fonts: "Montserrat", sans-serif;
 }
 
 /* Skip Link Styling Start */
@@ -198,40 +198,259 @@ header {
 }
 /* Navigation Styling End */
 
-
 /* Text Styling Start */
-
-
-
-
-
-
-
-
+h1, h2, p {
+    padding: 0.25rem 2rem;
+}
 /* Text Styling End */
 
 /* Intro Styling Start */
+#intro {
+    margin: 15px 0;
+}
+
+#intro img {
+    height: auto;
+    width: 100%;
+    margin: .25rem 0;
+}
+
+#intro p {
+    font-size: 1.25rem;
+}
 /* Intro Styling End */
 
 /* Plan Styling Start */
+#plan {
+    padding: 1.5rem 3rem;
+    background-color: var(--yellow);
+}
+
+#plan section {
+    border: 3px solid var(--white);
+    background-color: var(--teal);
+    border-radius: 20px;
+    margin: 1rem 0;
+    padding: 3rem;
+    text-align: center;
+}
+
+#plan h4 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#plan img {
+    margin-top: 1.5rem;
+}
 /* Plan Styling End */
 
 /* Testimonial Styling Start */
+#testimonials {
+    margin: 5rem;
+}
+
+#testimonials div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    align-content: center;
+}
+
+#testimonials div section {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    padding-bottom: 1rem;
+}
+
+#testimonials img {
+    height: auto;
+    width: 75%;
+}
+
+#testimonials h4 {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#testimonials p {
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+#testimonials q {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-style: italic;
+}
+
+#testimonials q::before {
+    content:"\201C";
+}
+
+#testimonials q::after {
+    content:"\201D";
+}
 /* Testimonial Styling End */
 
 /* About Styling Start */
+#about {
+    background-color: var(--blue);
+    padding: 2rem 2.5rem;
+}
+
+#about div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin: 2rem .5rem;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+#about div h4 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#about div p {
+    padding: 0;
+}
+
+#about div section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: flex-start;
+    text-align: center;
+    gap: 5px;
+    padding: 0;
+}
+
+#about div section img {
+   width: auto;
+   height: 110px;
+    
+}
+
+#about div section:first-of-type p {
+    visibility: hidden;
+    line-height: 0;
+    height: 20px;
+}
+
+#about div section:first-of-type p::after {
+    display: block;
+    visibility: visible;
+    content: "1.405 mi sq";
+}
 /* About Styling End */
 
-
-
-
-
-
-
 /* Contact Styling Start */
+#contact {
+    padding: 1rem 2.5rem;
+}
+
+.form-required {
+    font-style: italic;
+    font-family: var(--fonts);
+    font-size: 1.25rem;
+}
+
+#contact div {
+    grid-template-columns: 1fr;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
 /* Contact Styling End */
 
 /* Form Styling Start */
+form input, form select {
+    margin-bottom: 1rem;
+    border: 3px solid var(--purple);
+    padding-left: 10px;
+    font-size: 1.25rem;
+    height: 75px;
+}
+
+form label, form legend {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.required {
+    color: var(--purple);
+    padding: 2px;
+}
+
+fieldset {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
+fieldset label {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    gap: 2rem;
+    line-height: 1.1;
+    font-size: 2rem;
+}
+
+fieldset label:focus-within {
+    color: var(--purple);
+}
+
+input[type="radio"] {
+
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    margin: 0;
+
+    font: inherit;
+    color: var(--purple);
+    width: 75px;
+    height: 75px;
+    border: 0.1em solid var(--purple);
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    background-color: var(--purple);
+    box-shadow: inset 1em 1em var(--purple);
+    transition: 120ms transform ease-in-out;
+    transform: scale(0);
+    border-radius: 50%;
+    height: 47px;
+    width: 47px;
+    content: "";
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
 /* Form Styling End */
 
 /* Footer Styling Start */
