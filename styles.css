@@ -603,21 +603,71 @@ footer a {
     /* Intro Styling End */
 
     /* Plan Styling Start */
+    #plan {
+        padding: 1rem 5rem;
+    }
+
+    #plan div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #plan div section {
+        margin: 0.5;
+    }
     /* Plan Styling End */
 
-
     /* Testimonial Styling Start */
+    #testimonials {
+        margin: 3rem 8rem;
+    }
+
+    #testimonials h3 {
+        padding-bottom: 2rem;
+    }
+
+    #testimonials div {
+        grid-template-columns: 1fr 1fr;
+    }
     /* Testimonial Styling End */
 
-
     /* About Styling Start */
+    #about {
+        padding: 1rem 5rem;
+    }
+
+    #about div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     /* About Styling End */
 
     /* Contact Styling Start */
+    #contact {
+        padding: 1rem 6rem;
+    }
+
+    #contact h3 {
+        padding-top: 3rem;
+    }
+    #contact fieldset {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 1rem;
+        gap: 20px;
+    }
+
+    #mySubmit {
+        width: 50%;
+        margin-left: auto;
+        margin-top: 2.5rem;
+    }
     /* Contact Styling End */
 
-
     /* Footer Styling Start */
+    footer {
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     /* Footer Styling End */
 }
     
