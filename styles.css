@@ -52,9 +52,6 @@ table {
 }
 /* CSS Reset End */
 
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
-
 :root {
     font-size: 16px;
     --yellow: #F6D64A;
@@ -65,9 +62,10 @@ table {
     --light-gray: #EAEAEA;
     --white: #FFFFFF;
     --black: #000000;
-    --heading-font: "Molle", sans-serif;
-    --fonts: "Montserrat", sans-serif;
+    --heading-font: "Molle",serif;
+    --fonts: "Montserrat",sans-serif;
 }
+
 
 /* Skip Link Styling Start */
 /* styling skip links: https://webaim.org/techniques/css/invisiblecontent/ */
@@ -91,26 +89,28 @@ table {
 body {
     font-family: var(--fonts);
     line-height: 2;
-    color: var(--black);
+    color: var(--dark-gray);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 1rem;;
+    font-size: 1rem;
 }
 /* Body Styling End */
 
 /* Heading Styling Start */
 h1 {
     font-size: 3.125rem;
+    color: var(--dark-gray);
 }
 
 h1, h2, h3 {
     font-family: var(--heading-font);
-    
+    font-style: italic;  
 }
 
 h2, h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: var(--black);
 }
 
 h4 {
@@ -123,6 +123,11 @@ h4 {
 /* hidden but accessible headings from: https://webaim.org/techniques/css/invisiblecontent/ */
 header {
     background-image: linear-gradient(var(--teal), var(--white));
+}
+
+header p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .sr-only {
@@ -377,11 +382,39 @@ form input, form select {
     height: 75px;
 }
 
-form label, form legend {
-    font-weight: bolder;
+form label, form legend {   
     text-transform: uppercase;
     font-size: 1.25rem;
 }
+
+form legend {
+    font-weight: bolder;
+}
+
+label[for="fName"] {
+    font-weight: bolder;
+}
+
+label[for="lName"] {
+    font-weight: bolder;
+}
+
+label[for="email"] {
+    font-weight: bolder;
+}
+
+label[for="phone"] {
+    font-weight: bolder;
+}
+
+label[for="destination"] {
+    font-weight: bolder;
+}
+
+label[for="travelTime"] {
+    font-weight: bolder;
+}
+
 
 .required {
     color: var(--purple);
@@ -422,7 +455,6 @@ input[type="radio"] {
     border: 0.1em solid var(--purple);
     border-radius: 50%;
     transform: translateY(-0.075em);
-
     display: grid;
     place-content: center;
 }
@@ -443,14 +475,33 @@ input[type="radio"]:checked::before {
     margin-right: 10px;
 }
 
+.radio-label {
+    margin-left: 2rem;
+    align-self: center;
+    font-size: 1.25rem;
+    text-transform: none;
 
+}
 
+select {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    cursor: pointer;
+    line-height: inherit;
+}
 
-
-
-
-
-
+#mySubmit {
+    background-color: var(--purple);
+    color: var(--white);
+    text-transform: uppercase;
+}
 /* Form Styling End */
 
 /* Footer Styling Start */
