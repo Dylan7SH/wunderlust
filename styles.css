@@ -501,10 +501,26 @@ select {
     background-color: var(--purple);
     color: var(--white);
     text-transform: uppercase;
+    font-weight: 500;
 }
 /* Form Styling End */
 
 /* Footer Styling Start */
+footer {
+    background-color: var(--light-gray);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    justify-items: center;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--black);
+    text-decoration: none;
+}
 /* Footer Styling End */
 
 /* --- MEDIA QUERIES --- */
