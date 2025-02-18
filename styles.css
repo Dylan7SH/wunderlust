@@ -523,4 +523,101 @@ footer a {
 }
 /* Footer Styling End */
 
-/* --- MEDIA QUERIES --- */
+/* --------- MEDIA QUERIES --------- */
+@media screen and (min-width: 768px){
+
+    /* Header Styling Start */
+    header {
+        display: grid;
+        grid-template-columns: 236px auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    header h1, p {
+        padding: 0;
+    }
+
+    #logo{
+        grid-row: 1/span 2;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    /* Header Styling End */
+
+    /* Nav Styling Start */
+    nav {
+        grid-column: 1/span 2;
+    }
+
+    #menu-toggle label {
+        display: none;
+    }
+
+    #menu-toggle ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding: 0 5rem;
+        width: calc(100% - 10rem);
+        position: static;
+    }
+
+    #menu-toggle ul li {
+        border: none;
+    }
+
+    #menu-toggle ul li a {
+        padding: 1rem;
+        background-color: var(--white);
+    }
+
+    #menu-toggle ul .active a {
+        background-color: var(--yellow);
+    }
+
+    #menu-toggle ul li a:hover {
+        background-color: var(--yellow);
+    }
+    /* Nav Styling End */
+
+    /* Intro Styling Start */
+    #intro h2, #intro p {
+        padding: 0;
+    }
+
+    #intro {
+        margin: 1rem 5rem;
+    }
+
+    #img-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #img-grid picture {
+        grid-column: 1/span 2;
+    }
+    /* Intro Styling End */
+
+    /* Plan Styling Start */
+    /* Plan Styling End */
+
+
+    /* Testimonial Styling Start */
+    /* Testimonial Styling End */
+
+
+    /* About Styling Start */
+    /* About Styling End */
+
+    /* Contact Styling Start */
+    /* Contact Styling End */
+
+
+    /* Footer Styling Start */
+    /* Footer Styling End */
+}
+    
