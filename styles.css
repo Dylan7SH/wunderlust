@@ -670,4 +670,142 @@ footer a {
     }
     /* Footer Styling End */
 }
-    
+
+/* --------- MEDIA QUERIES --------- */
+@media screen and (min-width: 1024px) {
+
+    /* Header Styling Start */
+    header {
+        grid-template-columns: 358px auto;
+        padding-top: 60px;
+        grid-template-columns: 1fr 1fr;
+        height: 200px;
+    }
+
+    header img {
+        width: 385px;
+    }
+
+    header h1 {
+        font-size: 4.688rem;
+        padding-right: 3000px;
+    }
+
+    header p {
+        font-size: 1.563rem;
+        line-height: 0rem;
+    }
+    /* Header Styling End */
+
+    /* Nav Styling Start */
+    #menu-toggle ul {
+        width: 780px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+    }
+
+    #menu-toggle ul li a {
+        padding: 5px;
+    }
+    /* Nav Styling End */
+
+    /* Intro Styling Start */
+    #intro {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-rows: 50px auto;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 2rem;
+        padding-top: 4rem;
+    }
+
+    #intro h2, #intro p {
+        grid-column: 1;
+        padding-left: 1rem;
+    }
+
+    #intro h2 {
+        grid-row: 1;
+    }
+
+    #intro p {
+        grid-row: 2;
+        align-self: flex-start;
+    }
+
+    #img-grid {
+        grid-column: 2;
+        grid-row: 1/span 2;
+    }
+    /* Intro Styling End */
+
+    /* Plan Styling Start */
+    #plan {
+        padding: 4rem;
+    }
+
+    #plan div {
+        grid-template-columns: repeat(4, 1fr);
+    } 
+
+    #plan section {
+        padding: 3px;
+        height: 70%;
+    }
+
+    #plan h4 {
+        font-size: x-large;
+    }
+    #plan img {
+        height: 50%;
+    }
+    /* Plan Styling End */
+
+    /* Testimonial Styling Start */
+    #testimonials div {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #testimonials img {
+        height: auto;
+        width: 50%;
+    }
+
+    #testimonials h4 {
+        font-size: x-large;
+    }
+
+    #testimonials p {
+        font-size: large;
+    }
+
+    #testimonials q {
+        font-size: large;
+    }
+    /* Testimonial Styling End */
+
+    /* About Styling Start */
+    #about h3 {
+        padding-left: 230px;
+    }
+    #about div {
+        width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+
+    #about p {
+        font-size: large;
+    }
+    /* About Styling End */
+
+    /* Contact Styling Start */
+    /* Contact Styling End */
+
+    /* Footer Styling Start */
+    /* Footer Styling End */
+}
