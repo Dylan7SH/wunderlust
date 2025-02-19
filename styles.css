@@ -797,15 +797,48 @@ footer a {
         padding: 2rem;
     }
 
-
     #about p {
         font-size: large;
+    }
+
+    #about div section:first-of-type p {
+        visibility: visible;
+    }
+
+    #about div section:first-of-type p::after {
+        display: none;
     }
     /* About Styling End */
 
     /* Contact Styling Start */
+    #contact {
+        padding: 5rem;
+    }
+
+    #contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        align-items: start;
+        padding-top: 1rem;
+    }
     /* Contact Styling End */
 
     /* Footer Styling Start */
+    footer {
+        justify-items: start;
+    }
+
+    footer p {
+        padding-left: 5rem;
+    }
+
+    footer a {
+        justify-self: flex-end;
+    }
+
+    footer a:last-of-type {
+        padding-right: 6rem;
+    }
     /* Footer Styling End */
 }
